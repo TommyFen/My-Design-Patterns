@@ -1,5 +1,3 @@
-package tommy.mydesignpatterns.b_decorator2;
-
 /**
  * @author : Guojin
  * @e-mail : tommyfenv@163.com

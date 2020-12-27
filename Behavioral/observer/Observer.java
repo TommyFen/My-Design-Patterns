@@ -1,4 +1,3 @@
-package tommy.mydesignpatterns.a_observer;
 
 interface Observer {
 

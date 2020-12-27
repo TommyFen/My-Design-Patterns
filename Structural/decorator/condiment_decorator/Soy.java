@@ -1,6 +1,3 @@
-package tommy.mydesignpatterns.b_decorator.condiment_decorator;
-
-import tommy.mydesignpatterns.b_decorator.Beverage;
 
 /**
  * @author : Guojin

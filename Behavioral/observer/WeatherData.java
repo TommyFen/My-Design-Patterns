@@ -1,4 +1,3 @@
-package tommy.mydesignpatterns.a_observer;
 
 import java.util.ArrayList;
 import java.util.List;

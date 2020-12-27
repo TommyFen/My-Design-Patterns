@@ -1,4 +1,3 @@
-package tommy.mydesignpatterns.a_observer;
 
 /**
  * <pre>
@@ -8,7 +7,6 @@ package tommy.mydesignpatterns.a_observer;
  *    desc:
  * </pre>
  */
-
 public class WeatherStation {
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();

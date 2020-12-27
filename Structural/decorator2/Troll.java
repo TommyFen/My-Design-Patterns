@@ -1,4 +1,3 @@
-package tommy.mydesignpatterns.b_decorator2;
 
 /**
  * @author : Guojin

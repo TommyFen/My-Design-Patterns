@@ -1,11 +1,3 @@
-package tommy.mydesignpatterns.b_decorator;
-
-import android.util.Log;
-
-import tommy.mydesignpatterns.b_decorator.condiment_decorator.Milk;
-import tommy.mydesignpatterns.b_decorator.condiment_decorator.Mocha;
-import tommy.mydesignpatterns.b_decorator.condiment_decorator.Soy;
-import tommy.mydesignpatterns.b_decorator.condiment_decorator.Whip;
 
 /**
  * @author : Guojin
@@ -15,16 +7,12 @@ import tommy.mydesignpatterns.b_decorator.condiment_decorator.Whip;
  */
 
 public class StarbuzzCoffee {
-
-    public static final String TAG = "StarbuzzCoffee";
-
     /**
      * 点 浓咖啡
      */
     public static void orderEspresso() {
         //不加调料
         Beverage beverage = new Espresso();
-        Log.i(TAG,beverage.getDescription() + "$" + beverage.cost());
     }
 
     /**
@@ -33,7 +21,6 @@ public class StarbuzzCoffee {
     public static void orderHouseBlend() {
         //加奶泡
         Beverage beverage = new Whip(new HouseBlend());//动态添加装饰 类似于 IO 操作的 Buffer 流
-        Log.i(TAG,beverage.getDescription() + "$" + beverage.cost());
 
     }
 
@@ -46,8 +33,6 @@ public class StarbuzzCoffee {
         beverage = new Milk(beverage);
         beverage = new Mocha(beverage);
         beverage = new Whip(beverage);
-
-        Log.i(TAG,beverage.getDescription() + "$" + beverage.cost());
     }
 
     /**
@@ -58,7 +43,6 @@ public class StarbuzzCoffee {
         Beverage beverage = new DarkRoast();
         beverage = new Soy(beverage);
         beverage = new Soy(beverage);
-        Log.i(TAG,beverage.getDescription() + "$" + beverage.cost());
     }
 
 }

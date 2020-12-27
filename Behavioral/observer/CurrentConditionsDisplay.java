@@ -1,4 +1,3 @@
-package tommy.mydesignpatterns.a_observer;
 
 /**
  *
@@ -8,6 +7,7 @@ package tommy.mydesignpatterns.a_observer;
  *    desc:显示当前的内容
  *
  */
+
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 
     private static final String TAG = "CurrentConditionsDispla";
