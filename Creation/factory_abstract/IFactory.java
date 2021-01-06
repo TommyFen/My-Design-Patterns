@@ -1,0 +1,3 @@
+interface IFactory{
+    Fruit create();
+}

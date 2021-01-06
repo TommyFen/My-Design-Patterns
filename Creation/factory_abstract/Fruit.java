@@ -1,0 +1,5 @@
+interface Fruit {
+
+  void taste();
+
+}
