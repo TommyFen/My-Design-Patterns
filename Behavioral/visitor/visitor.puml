@@ -1,0 +1,16 @@
+@startuml
+abstract class Staff
+class Engineer extends Staff
+class Pm extends Staff
+
+class Report
+
+Staff <-- Report
+
+interface Leader
+class CEO implements Leader
+class CTO implements Leader
+
+Leader <-- Report
+
+@enduml
